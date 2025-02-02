@@ -72,3 +72,18 @@ while (num % 7 !== 0) {  // Continue looping until num is divisible by 7
 }
 
 console.log("The first number greater than 100 that is divisible by 7 is:", num);
+
+/*
+Function to Check if a Number is Positive, Negative, or Zero (if-else)
+*/
+function checkNumber(num){
+     if (num>0){
+          console.log("The number is positive")}
+     else if (num==0){
+          console.log("The number is zero")}
+     else {console.log("The number is negative")
+          }
+}
+checkNumber(5)
+checkNumber(45)
+checkNumber(-45)
