@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML CSS Review
+        </title>
+        <style>
+            /*
+            This is a star
+            */
+            .blue-button {
+                background-color: blueviolet;
+                color: white;
+                border: none;
+                
+            } // This is a comment
+        
+            .yellow-button {
+                background-color: purple;
+                color: silver;
+                border-width: 5px;
+                border-color: teal;
+                
+            }
+        </style>
+    </head>
+        
+        <body>
+            <button title="Good Job" class="blue-button" onclick="
+                alert('Good Job');
+                ">
+                Hey It`s me learning HTMl
+                <!--This is a comment-->
+            </button>
+            <p>
+                Paragraph of 
+                <button title = "Nice" class= "yellow-button">
+                    Hello
+                </button>
+                text
+            </p>
+
+        <script>
+                alert("Hello");
+
+                
+                console.log(2+2);
+        </script>
+    </body>
+</html>
