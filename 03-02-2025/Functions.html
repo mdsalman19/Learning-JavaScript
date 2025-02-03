@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Rock Paper Scissors game </title>
+  </head>
+  <body>
+    <p>This is my test. I`m attempting to create a game of rock paper scissor with computer.</p>
+    <p> I have redesigned the code using functions, instead of using long if-else blocks. </p>
+    <button onclick="
+      pickComputerMove();
+      let result = '';
+    if (computerMove === 'Rock') {
+      result = 'Tie.'
+    } else if (computerMove === 'Paper'
+    ) {
+      result = 'You Lose.'
+    } else if (computerMove === 'Scissors'
+    ) { result = 'You win.'}
+    alert(`You picked rock. Computer picked ${computerMove}. ${result}`) 
+    ">Rock</button>
+
+
+    <button onclick="
+      pickComputerMove();
+      let result = '';
+    if (computerMove === 'Rock') {
+      result = 'You win.'
+    } else if (computerMove === 'Paper'
+    ) {
+      result = 'Tie.'
+    } else if (computerMove === 'Scissors'
+    ) { result = 'You Lose.'}
+    alert(`You picked paper. Computer picked ${computerMove}. ${result}`) 
+    ">Paper</button>
+    
+    
+    
+    
+    <button onclick="
+      pickComputerMove();
+    let result = '';
+    if (computerMove === 'Rock') {
+      result = 'You Lose.'
+    } else if (computerMove === 'Paper'
+    ) {
+      result = 'You win.'
+    } else if (computerMove === 'Scissors'
+    ) { result = 'Tie.'}
+    alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`) 
+    ">Scissors</button>
+
+
+    <script>
+      let computerMove = '';
+      function pickComputerMove() {
+        const randomNumnber = Math.random();
+
+      if (
+        randomNumnber > 0 && randomNumnber < (1/3)
+      ) { computerMove = 'Rock'
+  } else if (randomNumnber > (1/3) && randomNumnber < (2/3)) {
+    computerMove = 'Paper'
+  }
+    else if (randomNumnber > (2/3) && randomNumnber < 1) {
+      computerMove = 'Scissors'
+    }   
+      }
+
+    </script>
+  </body>
+</html>
